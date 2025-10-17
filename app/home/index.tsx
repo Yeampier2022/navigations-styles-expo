@@ -6,7 +6,7 @@ const homeScreen = () => {
   return (
     <View className="py-[10vw] px-[5vw]">
       <Link href="/products" asChild>
-        <CustomButton>Productos</CustomButton>
+        <CustomButton className="bg-red-800">Productos</CustomButton>
       </Link>
 
       <CustomButton
