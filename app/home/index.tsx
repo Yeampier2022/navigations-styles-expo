@@ -1,13 +1,18 @@
-import { Link } from "expo-router";
+import CustomButton from "@/components/shared/CustomButton";
+import { Link, router } from "expo-router";
 import { View } from "react-native";
 
 const homeScreen = () => {
   return (
     <View className="py-[10vw] px-[5vw]">
-      <Link className="mb-[1vw]" href="/products">
-        Productos
+      <Link href="/products" asChild>
+        <CustomButton>Productos</CustomButton>
       </Link>
-      <Link href="/profiles">Perfiles</Link>
+
+      <CustomButton
+        children="Productos"
+        onPress={() => router.push("/products")}
+      />
     </View>
   );
 };

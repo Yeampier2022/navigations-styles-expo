@@ -6,8 +6,6 @@ const productsScrenn = () => {
       <Text>Products work</Text>
       <Text>Products work</Text>
       <Text>Products work</Text>
-
-
     </View>
   );
 };
