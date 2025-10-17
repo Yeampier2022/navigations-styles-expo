@@ -10,8 +10,8 @@ const homeScreen = () => {
       </Link>
 
       <CustomButton
-        children="Productos"
-        onPress={() => router.push("/products")}
+        children="Perfil"
+        onPress={() => router.push("/profiles")}
       />
     </View>
   );

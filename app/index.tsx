@@ -2,7 +2,7 @@ import { Redirect } from "expo-router";
 import "../global.css";
 
 export default function app() {
-  return  <Redirect href="/home" /> 
+  return  <Redirect href="/(stack)/home" /> 
     // <View className="flex-1 items-center justify-center bg-white">
     //   <Text className="text-xl font-bold text-blue-500">
     //     Welcome to Nativewind!

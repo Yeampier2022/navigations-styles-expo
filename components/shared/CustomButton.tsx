@@ -9,7 +9,7 @@ const CustomButton = ({ children, onPress, onLongPress, className }: Props) => {
     <Pressable
       onPress={onPress}
       onLongPress={onLongPress}
-      className={`p-3 rounded-md  bg-blue-600 active:opacity-90 ${className}`}
+      className={`p-3 rounded-md mb-2 bg-blue-600 active:opacity-90 ${className}`}
     >
       <Text className="text-black ">{children}</Text>
     </Pressable>
