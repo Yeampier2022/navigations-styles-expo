@@ -37,6 +37,12 @@ const stackLayout = () => {
           title: "Perfil ",
         }}
       />
+      <Stack.Screen
+        name="products/[id]"
+        options={{
+          title: "Producto Selecionado ",
+        }}
+      />
     </Stack>
   );
 };
