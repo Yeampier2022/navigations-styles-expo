@@ -11,6 +11,11 @@ const stackLayout = () => {
         headerTitleStyle: {
           fontWeight: "bold",
         },
+        headerShadowVisible: false,
+        contentStyle: {
+          backgroundColor: "white",
+        },
+        // headerShown: false
       }}
     >
       {/* Optionally configure static options outside the route.*/}
