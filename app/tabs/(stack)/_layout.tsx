@@ -4,6 +4,7 @@ const stackLayout = () => {
   return (
     <Stack
       screenOptions={{
+        headerShown: false,
         headerStyle: {
           backgroundColor: "#f4511e",
         },
@@ -15,30 +16,35 @@ const stackLayout = () => {
         contentStyle: {
           backgroundColor: "white",
         },
-        // headerShown: false
       }}
     >
       {/* Optionally configure static options outside the route.*/}
-      <Stack.Screen
+      {/* <Stack.Screen
         name="products/index"
         options={{
           title: "Productos",
         }}
-      />
+      /> */}
       <Stack.Screen
-        name="home/index"
+        name="(stack)/home"
         options={{
           title: "Inicio ",
         }}
       />
       <Stack.Screen
-        name="profiles/index"
+        name="/tabs/(stack)/profiles"
         options={{
           title: "Perfil ",
         }}
       />
       <Stack.Screen
-        name="products/[id]"
+        name="tabs/(stack)/profiles"
+        options={{
+          title: "Perfil ",
+        }}
+      />
+      <Stack.Screen
+        name="/tabs/(stack)/products[id]"
         options={{
           title: "Producto Selecionado ",
         }}
