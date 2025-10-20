@@ -4,6 +4,8 @@ const Home = () => {
   return (
     <View>
       <Text>Tab [Home|Settings]</Text>
+      <Text>Tab [Home|Settings]</Text>
+      <Text>Tab [Home|Settings]</Text>
     </View>
   );
 };
