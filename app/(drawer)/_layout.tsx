@@ -7,19 +7,19 @@ const DrawerLayout = () => {
     <Drawer
       drawerContent={CustomDrawe}
       screenOptions={{
-        headerShown: false,
+        // headerShown: false,
         overlayColor: "rgba(0,0,0,0.4)",
         drawerActiveTintColor: "indigo",
         headerShadowVisible: false,
         sceneStyle: {
           backgroundColor: "white",
         },
-        title: "Pronnamdp",
       }}
     >
       <Drawer.Screen
         name="(tabs)"
         options={{
+          headerShown: false,
           drawerLabel: "Tabs + stack",
           title: "Tabs + stack",
           drawerIcon: ({ color, size }) => (
