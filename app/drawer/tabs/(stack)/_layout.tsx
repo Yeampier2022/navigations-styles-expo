@@ -19,17 +19,18 @@ const stackLayout = () => {
     >
       {/* Optionally configure static options outside the route.*/}
       <Stack.Screen
-        name="products/index"
-        options={{
-          title: "Productos",
-        }}
-      />
-      <Stack.Screen
         name="home/index"
         options={{
           title: "Inicio",
         }}
       />
+      <Stack.Screen
+        name="products/index"
+        options={{
+          title: "Productos",
+        }}
+      />
+
       <Stack.Screen
         name="profiles/index"
         options={{

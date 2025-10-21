@@ -5,8 +5,9 @@ import Drawer from "expo-router/drawer";
 const DrawerLayout = () => {
   return (
     <Drawer
-    drawerContent={CustomDrawe}
+      drawerContent={CustomDrawe}
       screenOptions={{
+        headerShown: false,
         overlayColor: "rgba(0,0,0,0.4)",
         drawerActiveTintColor: "indigo",
         headerShadowVisible: false,
@@ -16,6 +17,16 @@ const DrawerLayout = () => {
         title: "Pronnamdp",
       }}
     >
+      <Drawer.Screen
+        name="tabs"
+        options={{
+          drawerLabel: "Tabs + stack",
+          title: "Tabs + stack",
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="person-circle-outline" size={size} color={color} />
+          ),
+        }}
+      />
       <Drawer.Screen
         name="user/index"
         options={{
