@@ -3,5 +3,5 @@ import "../global.css";
 
 export default function app() {
   // return <Redirect href="/tabs" />;
-  return <Redirect href="/drawer" />;
+  return <Redirect href="/home" />;
 }
